@@ -29,7 +29,6 @@
     --fs-72: 4.5rem;
 
     /* Active */
-    
     --accent-color: #cfc486;
 
     /* gradients */
@@ -55,7 +54,6 @@
 
 
 /* +++++++++++++++++++++GENERAL++++++++++++++++++++ */
-
 body {
     min-height: 100vh;
     background: var(--mainBg-color) ;
