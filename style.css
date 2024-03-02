@@ -1,0 +1,512 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* +++++++++++++++++++++ROOT+++++++++++++++++++++  */
+
+:root {
+
+    /* Font-size */
+
+    --fs-12: 0.75rem;
+    --fs-14: 0.875rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-22: 1.375rem;
+    --fs-24: 1.5rem;
+    --fs-26: 1.625rem;
+    --fs-28: 1.75rem;
+    --fs-30: 1.875rem;
+    --fs-36: 2.25rem;
+    --fs-40: 2.5rem;
+    --fs-42: 2.625rem;
+    --fs-64: 4rem;
+    --fs-72: 4.5rem;
+
+    /* Active */
+    
+    --accent-color: #cfc486;
+
+    /* gradients */
+
+    --mainBg-color: #fefefe;
+
+    /* Colors */
+    
+    --textColor:#878e92;
+    --logo-color: #323232;
+
+
+    /* Fonts */
+    --font-family-soft: "Nunito", sans-serif;
+    --font-family-hard: "Dancing Script", sans-serif;
+    --font-family-bold: "Roboto Condensed, sans-serif";
+}
+
+
+/* -------------------------------------------------------- */
+
+
+
+
+/* +++++++++++++++++++++GENERAL++++++++++++++++++++ */
+
+body {
+    min-height: 100vh;
+    background: var(--mainBg-color) ;
+    font-family: var(--font-family-soft);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin: 150px auto 0;
+    max-width: 1300px;
+    background: #fefefe;
+    box-shadow: 1px 1px 20px #2a353b5e;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* ======== Allsection ========  */
+
+.block {
+    margin: 20px auto 0;
+    padding: 80px 100px 0;
+}
+    
+/* ======== AllParagraph ========  */
+.block .text {
+    color: var(--textColor);
+    font-family: var(--font-family-soft);
+    line-height: 2.3;
+    font-size: var(--fs-24);
+    font-weight: 600;
+}
+
+.main-heading::first-letter {
+    font-size: var(--fs-40);
+}
+
+/*+++++++++++++++++++++++HEADER+++++++++++++++++++++++*/
+
+
+/* ======== navBar ========  */
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    min-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+
+/* ======== linksNavBar ========  */
+
+.underlined-link {
+    text-decoration: none;
+    font-family: var(--font-family-soft);
+    color: var(--logo-color);
+    padding: var(--fs-12);
+    font-size: var(--fs-36);
+    font-weight: 600;
+    margin: 20px 25px;
+}
+
+ /* ========animationLinks======== */
+.underlined-link:hover {
+    color: var(--accent-color);
+}
+
+.underlined-link {
+    position: relative;
+}
+
+.underlined-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--accent-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+    transform-origin: left;
+}
+
+.underlined-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* ========Toggle-btn======== */
+.toggle-container {
+    width: 80px;
+    height: 350px;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    position: relative;
+    background: var(--logo-color);
+}
+.btn {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ++++++++++++++++leMAIN++++++++++++++++++ */
+
+
+/* ======== section about me ========  */
+
+/* h1 */
+.block .main-heading {
+    font-family: var(--font-family-soft);
+    font-size: var(--fs-24);
+    color: var(--textColor);
+}
+
+/* accentWords */
+.block .accent-words {
+    color: var(--accent-color);
+}
+
+/* language html css js */
+.introduction .language {
+    font-size: var(--fs-20);
+    font-family: var(--font-family-bold);
+    color: var(--accent-color);
+    list-style-type: none;
+    text-align: end;
+    text-decoration:underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+    margin-top: 50px;
+}
+
+/* ======== parallax ========  */
+
+/* img */
+
+.parallax {
+    height: 250px;
+    width: 100% ;
+    margin: 50px;
+    background-repeat: no-repeat;
+    background-image: url(ressources/artistic-8171090_1920.png);
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* h2 */
+.subtitle-work {
+    font-family: var(--font-family-soft);
+    font-size: var(--fs-64);
+    color: var(--logo-color);
+    text-align: center;
+    text-shadow: 2px 2px 1px #000, -2px -2px 1px #f1f1f1;
+}
+
+
+/* ======== section works ========  */
+
+
+.work-container {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 280px;
+    height: 190px;
+    background: #fefefe;
+    border: 1px solid #878e9265 ;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px #878e92;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX();
+    transition: translate 2s ease-in;
+    transform: scale(1);
+}
+
+
+.item.active {
+    transform: translateX(0)
+}
+.item:hover {
+    transform: scale(1.08);
+}
+.link-item {
+    font-size: 35px;
+    text-decoration: none;
+    color: #878e92;
+}
+
+
+/* ======== section contact ========  */
+
+.contact-container {
+    width: 100%;
+    height: 150px;
+    padding: 50px;
+    margin: 50px 0 100px;
+    background: lightgoldenrodyellow;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    transition: transform 00.1s ease-out;
+}
+
+.icon:hover {
+    transform: translate(5px,-5px);
+}
+
+.sociaux-container {
+    position: relative;
+}
+.sociaux-container:hover span {
+    animation: textVisible 2.3s ease-in forwards;
+}
+
+@keyframes textVisible {
+    100% {
+        visibility: visible;
+    }
+}
+
+.contact-container span {
+    font-size: 20px;
+    text-align: center;
+    color: var(--logo-color);
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-60%, 80%);
+    visibility: hidden;
+}
+
+
+
+
+/*  ==========footer=========== */
+
+footer {
+    width: 100%;
+    height: 15px;
+    object-fit: cover;
+    display: flex;
+    align-items: end;
+}
+
+/* ======== btn-up ========  */
+
+.btn-up {
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: 1px solid #878e9252;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 50;
+    bottom: 20px;
+    right: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.btn-up:hover {
+    background: #878e9252;
+    color: #333;
+}
+
+
+
+
+/* ======== responsive ========  */
+
+/* @@@@@@@@@@@@@@@ 1257 @@@@@@@@@@@@@@@ */
+@media(max-width: 1257px){
+
+    /* ==============work-container================ */
+
+    .work-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .work-container .item {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+
+}
+
+/* @@@@@@@@@@@@@@@ 936 @@@@@@@@@@@@@@@ */
+
+@media(max-width: 936px) {
+
+    /* ========================navBar================ */
+    .header {
+        width: 40%;
+        height: 30%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background: #fefefe;
+        border-right: 1px solid #cfc486;
+        border-bottom: 1px solid #cfc486;
+        border-bottom-right-radius: 10px;
+        transform: translateX(-100%);
+    }
+    .nav-bar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+    .nav-bar a {
+        font-size: var(--fs-26);
+    }
+    .header.active {
+        transform: translateX(0);
+
+    }
+    main {
+        margin: 0;
+    }
+
+    /*=================== toogle-btn =======================*/
+
+    .burger-btn {
+        width: 50px;
+        height: 50px;
+        margin: 20px 20px;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 20;
+    }
+    .line {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #333;
+        position: absolute;
+    }
+    .l1 {
+        transform: translateY(15px);
+        transition: transform 0.3s ease-in-out;
+    }
+    .l2 {
+        transition: transform 0.4s ease-in-out;
+    }
+    .l3 {
+        transform: translateY(-15px);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .burger-btn.active .l1 {
+        transform: rotate(45deg);
+        transition: transform 0.4s ease-in-out;
+    }
+    .burger-btn.active .l2 {
+        transform: scale(0);
+        opacity: (0);
+        transition:
+        scale 0.2s ease-in-out,
+        opacity 0.4s ease-in-out;
+    }
+    .burger-btn.active .l3 {
+        transform: rotate(-45deg);
+        transition: transform 0.4s ease-in-out;
+    
+    } 
+    .nav-bar.active {
+        transform: translateX(0);
+        transition: transform 0.4s ease-in-out;
+    }
+}
+
+/* @@@@@@@@@@@@@@@ 425 @@@@@@@@@@@@@@@ */
+
+@media(max-width: 425px){
+    main {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+

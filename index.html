@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+        
+    <!-- header -->
+
+    <button class="burger-btn" aria-label="toggle button">
+        <span class="line l1"></span>
+        <span class="line l2"></span>
+        <span class="line l3"></span>
+    </button>
+    
+    <div class="header">
+        <!-- nav -->
+        <nav class="nav-bar" id="nav-top">
+            <a href="#about" class="underlined-link">About</a>
+            <a href="#work" class="underlined-link">Works</a>
+            <a href="#contact" class="underlined-link">Contact</a>
+        </nav>
+        
+    </div>
+    
+    <!-- main -->
+    <main class="main">
+
+        <section class="block introduction" id="about">
+            <h1 class="main-heading">Bonjour 👋 je m' appelle Aurore,</h1>
+            <p class="text">cette page web
+                est <span class="accent-words">mon tout premier Projet</span> ! J ai pris
+                beaucoup de plaisir à travailler dessus. Même si par moment ça a été compliqué
+                👩‍💻 car c' était un vrai challenge pour moi,
+                je suis fier d' avoir
+                brisé mes craintes et osé mettre un pas
+                dans le <span class="accent-words">Développement Web.</span>
+                Aujourd'hui, malgres l' infime partie que j ai exploré du monde du dev
+                je n' ai plus de doute, <span class="accent-words">J' adore coder !</span>
+                je veux continuer à explorer ce monde hyper
+                stimulant ! Ça me conforte dans mon choix de reconversion pro.
+                J' ai hâte de collaborer avec une école
+                afin de développer mes compétences et pouvoir
+                participer à ce monde facinant.
+                <span class="accent-words">Bien à vous 👋</span>
+            </p>
+            <p class="language">HTML5 | CSS3 | JavaScript</p>
+        </section>
+
+        <!-- Parallax -->
+        <div class="parallax" id="work">
+            <h2 class="subtitle-work">Works</h2>
+        </div>
+        
+        <section class="block work">
+            <p class="text">Quand on débute le code, c' est très exitant ! <span class="accent-words">On a 
+                tout à apprendre de A à Z</span>. Il est evidant que la maîtrise d' un language de code, 
+                ne s'acquiert pas du jour au lendemain. Cette verité est d' autant plus
+                vraie quand on est autodidacte. Mon apprentissage se fait à travers de
+                petits exercices sur les bases à maitriser afin de comprendre
+                le language et pouvoir par la suite être capable de créer entièrement
+                la partie font-end d' un site. Pour l' instant dans cette section
+                <span class="accent-words">je vous montre donc mes projets</span> mais j' espère dans un futur
+                très proche pouvoir partager avec vous des projets plus grands 😊
+            </p>
+            <ul class="work-container">
+                <li class="item projet-1" id="p1">
+                    <a href="/projets/aside/Projet-1.html" target="_blank" class="link-item" id="p1">Menu rideau</a>
+                </li>
+                <li class="item projet-2">
+                    <a href="#" target="_blank" class="link-item">🛠️</a>
+                </li>
+                <li class="item projet-3">
+                    <a href="#" target="_blank" class="link-item">🛠️</a>
+                </li>
+                <li class="item projet-4">
+                    <a href="#" target="_blank" class="link-item">🛠️</a>
+                </li>
+                <li class="item projet-5">
+                    <a href="#" target="_blank" class="link-item">🛠️</a>
+                </li>
+                <li class="item projet-6">
+                    <a href="#" target="_blank" class="link-item">🛠️</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- contact container -->
+        <nav class="contact-container" id="contact">
+            <div class="sociaux-container">
+                <a href="https://github.com/AuroreTnr" target="_blank"><img class="icon" src="ressources/github-square-svgrepo-com.svg" alt="lien github"></a>
+                <span>AuroreTnr</span>
+            </div>
+            <div class="sociaux-container">
+                <a href="https://www.instagram.com/joyfulbalanceaurore/" target="_blank"><img class="icon" src="ressources/instagram-svgrepo-com.svg" alt="liens instagram"></a>
+                <span>joyfulbalanceaurore</span>
+            </div>
+            <div class="sociaux-container">
+                <a href="https://www.linkedin.com/in/aurore-tournier-0638a0299/" target="_blank"><img class="icon" src="ressources/linkedin-svgrepo-com.svg" alt="liens linkedin"></a>
+                <span>linkedin</span>
+            </div>
+        </nav>
+
+        <!-- footer -->
+        <footer>
+            <p class="sources">Source image : Pixabay DecorativeWorld. 
+            </p>
+        </footer>
+
+    </main>
+    <a href="#nav-top" class="btn-up" aria-label="Up button">UP</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
