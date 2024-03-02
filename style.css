@@ -273,9 +273,6 @@ main {
 }
 
 
-.item.active {
-    transform: translateX(0)
-}
 .item:hover {
     transform: scale(1.08);
 }
@@ -489,6 +486,9 @@ footer {
     .nav-bar.active {
         transform: translateX(0);
         transition: transform 0.4s ease-in-out;
+    }
+    .link-item {
+        text-align: center;
     }
 }
 
