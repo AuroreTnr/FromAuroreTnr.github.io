@@ -280,7 +280,7 @@ main {
     transform: scale(1.08);
 }
 .link-item {
-    font-size: 35px;
+    font-size: var(--fs-24);
     text-decoration: none;
     color: #878e92;
 }
@@ -383,7 +383,6 @@ footer {
     /* ==============work-container================ */
 
     .work-container {
-        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
