@@ -85,7 +85,7 @@ main {
 
 .block {
     margin: 10px auto 0;
-    padding: 40px 100px 0;
+    padding: 0px 100px 0;
 }
     
 /* ======== AllParagraph ========  */
@@ -95,10 +95,6 @@ main {
     line-height: 2.3;
     font-size: var(--fs-20);
     font-weight: 600;
-}
-
-.main-heading::first-letter {
-    font-size: var(--fs-40);
 }
 
 /*+++++++++++++++++++++++HEADER+++++++++++++++++++++++*/
@@ -375,18 +371,40 @@ footer {
 /* ======== responsive ========  */
 
 /* @@@@@@@@@@@@@@@ 1257 @@@@@@@@@@@@@@@ */
-@media(max-width: 1257px){
+@media(max-width: 1440px){
 
     /* ==============work-container================ */
-
+    main {
+        max-width: 1000px;
+        margin: 200px auto;
+    }
+    .block {
+        margin: 70px;
+        padding: 0px;
+    }
+    .block .text {
+        font-size: var(--fs-16);
+    }
+    .block .main-heading {
+        font-size: var(--fs-16);
+    }
+    .introduction .language {
+        margin: 0;
+        font-size: var(--fs-16);
+    }
     .work-container {
         justify-content: center;
         align-items: center;
+        margin: 5px auto;
+        padding: 0;
     }
     .work-container .item {
-        margin: 0;
-        padding: 0;
+        margin: 0 auto;
+        padding: 5px;
         width: 90%;
+    }
+    .underlined-link {
+        font-size: var(--fs-20);
     }
 
 }
@@ -396,23 +414,32 @@ footer {
 @media(max-width: 936px) {
 
     /* ========================navBar================ */
+
+    main {
+        margin-top: 30px;
+        box-shadow: 0px 0px 0px #000;
+        max-width: 600px;
+    }
+
     .header {
-        width: 40%;
-        height: 30%;
+        width: 50%;
+        height: 8%;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 30%;
         z-index: 10;
         background: #fefefe;
         border-right: 1px solid #cfc486;
         border-bottom: 1px solid #cfc486;
         border-bottom-right-radius: 10px;
-        transform: translateX(-100%);
+        transform: translateY(-100%);
+        justify-content: center;
+        align-items: center;
     }
     .nav-bar {
         position: absolute;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
         gap: 0;
     }
@@ -423,29 +450,30 @@ footer {
         transform: translateX(0);
 
     }
-    main {
-        margin: 0;
+    .contact-container{
+        background: #fefefe;
+        padding: 0;
+    }
+    footer {
+        background: #fefefe;
     }
 
     /*=================== toogle-btn =======================*/
 
-    main {
-        border-radius: 0;
-    }
     .burger-btn {
         width: 50px;
         height: 50px;
-        margin: 20px 20px;
+        margin: 40px 20px;
         background: transparent;
         border: none;
         outline: none;
         cursor: pointer;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
+        justify-content: start;
+        align-items: start;
+        position: relative;
         top: 0px;
-        left: 0px;
+        left: 28%;
         z-index: 20;
     }
     .line {
@@ -490,6 +518,10 @@ footer {
     .link-item {
         text-align: center;
     }
+    .contact-container span {
+        opacity: 0;
+    }
+
 }
 
 
@@ -500,8 +532,37 @@ footer {
         margin: 0;
         padding: 0;
     }
-}
+    .burger-btn {
+        width: 100px;
+        height: 100px;
+    }
+    .line {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: var(--textColor);
+        position: absolute;
+    }
+    .block {
+        margin: 70px;
+        padding: 0px;
+    }
+    .block .text {
+        font-size: var(--fs-14);
+    }
+    .block .main-heading {
+        font-size: var(--fs-14);
+    }
+    .introduction .language {
+        margin: 0;
+        font-size: var(--fs-14);
+    }
+    .contact-container span {
+        opacity: 0;
+    }
+    
 
+}
 
 
 
