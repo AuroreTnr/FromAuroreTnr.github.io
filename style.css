@@ -145,7 +145,7 @@ h1 {
     width: 100%;
     height: 250px;
     position: relative;
-    background-image: url(/ressources/fond\ parallax.png);
+    background-image: url(LIENS/fond\ parallax.png);
     background-position: center;
     background-attachment: fixed;
     display: flex;
