@@ -195,37 +195,37 @@ h1 {
 @media (max-width: 768px){
 
     .underlined-link {
-        font-size: var(--fs-18);
+        font-size: var(--fs-24);
     }
     h1 {
-        font-size: var(--fs-16);
+        font-size: var(--fs-20);
         margin: 20px auto 40px;
     }
     .text-1 {
-        font-size: var(--fs-12);
-        padding: 0 15px;
+        font-size: var(--fs-18);
+        padding: 0 20px;
         margin: 10px auto 50px;
     }
     .language {
-        font-size: var(--fs-12);
+        font-size: var(--fs-16);
         margin-right: 10px;
     }
     .parallax {
-        height: 150px;
+        height: 180px;
     }
     .subtitle-work {
         font-size: var(--fs-50);
     }  
     .text-2 {
-        font-size: var(--fs-12);
-        padding: 0 15px;
-        margin: 5px auto 35px;
+        font-size: var(--fs-18);
+        padding: 0 20px;
+        margin: 10px auto 50px;
     }
     .listWork{
-        font-size: var(--fs-12);
+        font-size: var(--fs-18);
     }
     .icon {
-        width: var(--fs-18);
+        width: var(--fs-20);
     }
 }
 
