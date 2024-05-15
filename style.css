@@ -123,11 +123,17 @@ h1 {
 }
 
 
-.text {
+.text-1 {
     font-size: var(--fs-20);
     padding: 15px;
     line-height: 2;
     margin: 0 auto 180px;
+}
+.text-2 {
+    font-size: var(--fs-20);
+    padding: 15px;
+    line-height: 2;
+    margin: 0 auto 30px;
 }
 
 .accent-words {
@@ -139,7 +145,6 @@ h1 {
 .language {
     font-weight: 600;
     text-align: end;
-    
 }
 
 .parallax {
@@ -155,17 +160,28 @@ h1 {
     margin: 0 auto 40px;
 }
 
-h2 {
+.subtitle-work {
     font-size: var(--fs-72);
     color: var(--textColor);
 }
 
+/* +++++++++++++++++++++NAV WORKS++++++++++++++++++++ */
 
+.works-container {
+    text-align: center;
+    margin: 0 auto 60px;
+}
+.listWork{
+    font-size: var(--fs-20);
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
 
 /* +++++++++++++++++++++BLOCK CONTACT++++++++++++++++++++ */
 .contact-container {
     width: 100%;
-    margin: 5px auto 500px;
+    margin: 100px auto 500px;
     display: flex;
     justify-content: center;
     gap: var(--fs-30);
