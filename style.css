@@ -25,6 +25,8 @@
     --fs-36: 2.25rem;
     --fs-40: 2.5rem;
     --fs-42: 2.625rem;
+    --fs-50: 3.125rem;
+    --fs-56: 3.5rem;
     --fs-64: 4rem;
     --fs-72: 4.5rem;
 
@@ -188,6 +190,43 @@ h1 {
 }
 .icon {
     width: var(--fs-26);
+}
+
+@media (max-width: 426px){
+
+    .underlined-link {
+        font-size: var(--fs-18);
+    }
+    h1 {
+        font-size: var(--fs-16);
+        margin: 20px auto 40px;
+    }
+    .text-1 {
+        font-size: var(--fs-12);
+        padding: 0 15px;
+        margin: 10px auto 50px;
+    }
+    .language {
+        font-size: var(--fs-12);
+        margin-right: 10px;
+    }
+    .parallax {
+        height: 150px;
+    }
+    .subtitle-work {
+        font-size: var(--fs-50);
+    }  
+    .text-2 {
+        font-size: var(--fs-12);
+        padding: 0 15px;
+        margin: 5px auto 35px;
+    }
+    .listWork{
+        font-size: var(--fs-12);
+    }
+    .icon {
+        width: var(--fs-18);
+    }
 }
 
 
