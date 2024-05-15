@@ -202,7 +202,7 @@ h1 {
         margin: 20px auto 40px;
     }
     .text-1 {
-        font-size: var(--fs-18);
+        font-size: var(--fs-20);
         padding: 0 20px;
         margin: 10px auto 50px;
     }
@@ -217,12 +217,12 @@ h1 {
         font-size: var(--fs-50);
     }  
     .text-2 {
-        font-size: var(--fs-18);
+        font-size: var(--fs-20);
         padding: 0 20px;
         margin: 10px auto 50px;
     }
     .listWork{
-        font-size: var(--fs-18);
+        font-size: var(--fs-20);
     }
     .icon {
         width: var(--fs-20);
