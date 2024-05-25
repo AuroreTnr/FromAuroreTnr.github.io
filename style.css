@@ -62,10 +62,6 @@ body {
     background: var(--mainBg-color) ;
     font-family: var(--font-family-bold);
     margin: 0 auto;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     color: var(--textColor);
 }
 
@@ -112,7 +108,7 @@ a::after {
 
 
 h1 {
-    font-size: var(--fs-24);
+    font-size: var(--fs-26);
     font-family: var(--font-family-bold);
     color: var(--textColor);
     margin: 150px auto 40px;
@@ -126,13 +122,13 @@ h1 {
 
 
 .text-1 {
-    font-size: var(--fs-20);
+    font-size: var(--fs-24);
     padding: 15px;
     line-height: 2;
     margin: 0 auto 180px;
 }
 .text-2 {
-    font-size: var(--fs-20);
+    font-size: var(--fs-24);
     padding: 15px;
     line-height: 2;
     margin: 0 auto 30px;
@@ -174,10 +170,12 @@ h1 {
     margin: 0 auto 60px;
 }
 .listWork{
-    font-size: var(--fs-20);
+    font-size: var(--fs-24);
     color: var(--accent-color);
     text-decoration: underline;
     text-underline-offset: 6px;
+    display: block;
+    margin-bottom: 15px;
 }
 
 /* +++++++++++++++++++++BLOCK CONTACT++++++++++++++++++++ */
