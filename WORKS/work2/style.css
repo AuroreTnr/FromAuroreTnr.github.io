@@ -55,9 +55,9 @@ img {
     }
     
     .card {
-        max-width: 350px;
-        height: 450px;
-        margin: 250px auto;
+        max-width: 250px;
+        height: 350px;
+        margin: 90px auto;
         padding: 20px 20px 50px;
         background: #f5efe6;
         display: flex;
@@ -69,17 +69,16 @@ img {
     
     }
     img {
-        max-width: 250px;
-        min-height: 250px;
+        max-width: 150px;
+        min-height: 180px;
         object-fit: cover;
         object-position: center;
-        border: none;
-        border-radius: 50px;
-        margin: 50px 0 50px;
+        border-radius: 5px;
+        margin: 20px 0 20px;
     }
     .btn-next {
         min-width: 130px;
-        height: 40px;
+        height: 35px;
         padding: 5px;
         color: oldlace;
         background: #7C4C53;
