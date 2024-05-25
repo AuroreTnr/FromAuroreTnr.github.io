@@ -9,8 +9,8 @@ body {
 }
 
 .card {
-    max-width: 500px;
-    height: 650px;
+    max-width: 510px;
+    height: 660px;
     margin: 250px auto;
     padding: 20px 20px 50px;
     background: #f5efe6;
@@ -23,8 +23,8 @@ body {
 
 }
 img {
-    max-width: 400px;
-    min-height: 400px;
+    max-width: 410px;
+    min-height: 410px;
     object-fit: cover;
     object-position: center;
     border: none;
