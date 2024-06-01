@@ -3,7 +3,7 @@ const controlButtons = document.querySelectorAll(".control-btn")
 const previousBtn = document.querySelector(".previous-btn")
 const nextBtn = document.querySelector(".next-btn")
 
-
+const Subtitle = document.querySelector("h2")
 
 previousBtn.addEventListener("click", handleIndex);
 nextBtn.addEventListener("click", handleIndex);
@@ -25,4 +25,12 @@ function handleIndex(e){
 
     slideImages[index].classList.add("active")
 
+    Subtitle.textContent = ""
+    
+    if(slideImages[index].id === "myCat"){
+        Subtitle.textContent="❤ It' s my kitten ❤"
+    }
 }
+
+
+
