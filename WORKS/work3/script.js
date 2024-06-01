@@ -3,6 +3,8 @@ const controlButtons = document.querySelectorAll(".control-btn")
 const previousBtn = document.querySelector(".previous-btn")
 const nextBtn = document.querySelector(".next-btn")
 
+
+
 previousBtn.addEventListener("click", handleIndex);
 nextBtn.addEventListener("click", handleIndex);
 
@@ -22,4 +24,5 @@ function handleIndex(e){
     }
 
     slideImages[index].classList.add("active")
+
 }
