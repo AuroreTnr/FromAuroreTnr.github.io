@@ -16,7 +16,8 @@ body {
     src: url(./Font/Savannah.ttf)
 }
 h1{
-    margin: 100px auto 0;
+    margin: 20px auto 0;
+    padding: 20px;
     text-align: center;
     font-family: Savannah, Arial, Helvetica, sans-serif;
     font-size: 100px;
@@ -24,8 +25,8 @@ h1{
   
 .slider {
     max-width: 600px;
-    min-height: 400px; 
-    margin: 100px auto 0;
+    min-height: 400px;
+    margin: 50px auto 0;
     position: relative;
 }
 .slide-img {
@@ -63,5 +64,25 @@ h1{
     top: 50%;
     right: 5px;
     transform: translateY(-50%) rotate(90deg);
+}
+
+@media(max-width: 682px){
+    h1{
+        margin: 25px auto 0;
+        padding: 20px;
+        font-size: 50px;
+    }
+      
+    .slider {
+        max-width: 280px;
+        min-height: 200px;
+        margin: 50px auto 0;
+    }
+    .control-btn {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #111;
+    }
+    
 }
   
