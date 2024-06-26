@@ -1,0 +1,144 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background:url(ressources/bricks-wall.jpg);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 1px;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 29, 29, 0.863);
+}
+
+.card {
+    background: #222;
+    position: relative;
+    width: 75vmin;
+    margin: 100px auto 0;
+    padding: 50px;
+    border-radius: 22px;
+    box-shadow: 
+    0 0 10vw 0vw #7476ff,
+    0 0 2vw 0.4vw #0408fb,
+    
+    inset 0 0 0.5vw 0.2vw #7476ff,
+    inset 0 0 0.2vw 0.2vw #3134ff,
+    inset 0 0 0.25vw 0.2vw #0408fb
+    ;
+}
+
+.card h1 {
+    font-family: Mali, sans-serif;
+    font-size: calc(4vmin + 6px);
+    font-weight: 300;
+    color: #f1f1f1e3;
+    text-shadow: 
+    0.1vw 0vw 0.25vw #7476ff,
+    0.15vw 0vw 0.25vw #7476ff,
+    0.4vw 0vw 0.25vw #7476ff,
+
+    0.1vw 0vw 0.5vw #3134ff,
+    0.15vw 0vw 0.5vw #3134ff,
+    0.4vw 0vw 0.5vw #3134ff,
+
+    0.1vw 0vw 2vw #3134ff,
+    0.15vw 0vw 2vw #3134ff,
+    0.4vw 0vw 2vw #3134ff,
+
+    0.1vw 0vw 1vw #0408fb,
+    0.15vw 0vw 1vw #0408fb,
+    0.4vw 0vw 5vw #0408fb,
+
+    0.1vw 0vw 5vw #0408fb,
+    0.15vw 0vw 20vw #0408fb,
+    0.4vw 0vw 10vw #0408fb;
+    animation: blink 2s infinite alternate;
+}
+
+
+.card span {
+    font-family: Raleway, sans-serif;
+    padding-left: 0px;
+    font-size: calc(2vmin + 6px);
+    letter-spacing: 5px;
+    color: #f1f1f1cb;
+    text-shadow: 
+    0.1vw 0vw 0.25vw #ff7474,
+    0.15vw 0vw 0.25vw #ff7474,
+    0.4vw 0vw 0.25vw #ff7474,
+
+    0.1vw 0vw 0.5vw #ff3131,
+    0.15vw 0vw 0.5vw #ff3131,
+    0.4vw 0vw 0.5vw #ff3131,
+
+    0.1vw 0vw 2vw #ff3131,
+    0.15vw 0vw 2vw #ff3131,
+    0.4vw 0vw 2vw #ff3131,
+
+    0.1vw 0vw 1vw #fb0404,
+    0.15vw 0vw 1vw #fb0404,
+    0.4vw 0vw 5vw #fb0404,
+
+    0.1vw 0vw 5vw #fb0404,
+    0.15vw 0vw 20vw #fb0404,
+    0.4vw 0vw 10vw #fb0404;
+}
+
+.card img {
+    position: absolute;
+    bottom: -10vmin;
+    right: -5vmin;
+    width: 25vmin;
+    filter: 
+    drop-shadow(0 0.15vw 0.30vw #fffb0e)
+    drop-shadow(0 0.15vw 0.30vw #8a8942);
+    animation: microphone-blink 2s infinite alternate;
+}
+
+@keyframes blink {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 
+        0.1vw 0vw 0.25vw #7476ff,
+        0.15vw 0vw 0.25vw #7476ff,
+        0.4vw 0vw 0.25vw #7476ff,
+    
+        0.1vw 0vw 0.5vw #3134ff,
+        0.15vw 0vw 0.5vw #3134ff,
+        0.4vw 0vw 0.5vw #3134ff,
+    
+        0.1vw 0vw 2vw #3134ff,
+        0.15vw 0vw 2vw #3134ff,
+        0.4vw 0vw 2vw #3134ff,
+    
+        0.1vw 0vw 1vw #0408fb,
+        0.15vw 0vw 1vw #0408fb,
+        0.4vw 0vw 5vw #0408fb,
+    
+        0.1vw 0vw 5vw #0408fb,
+        0.15vw 0vw 20vw #0408fb,
+        0.4vw 0vw 10vw #0408fb;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes microphone-blink {
+    0%, 9%, 15%, 79%, 83%, 100% {
+        filter: 
+        drop-shadow(0 0.15vw 0.30vw #fffb0e)
+        drop-shadow(0 0.15vw 0.30vw #8a8942);
+    }
+    10%, 14%, 80%, 82% {
+        filter: none;
+    }
+}
+
