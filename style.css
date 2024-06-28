@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -40,12 +39,9 @@
     /* Colors */
     
     --textColor:#4B4453;
-    --logo-color: #323232;
-
 
     /* Fonts */
     --font-family-soft: "Nunito", sans-serif;
-    --font-family-hard: "Dancing Script", sans-serif;
     --font-family-bold: "Roboto Condensed, sans-serif";
 }
 
@@ -56,12 +52,12 @@
 
 
 /* +++++++++++++++++++++GENERAL++++++++++++++++++++ */
+
 body {
     min-height: 100vh;
-    max-width: 1100px;
-    background: var(--mainBg-color) ;
     font-family: var(--font-family-bold);
-    margin: 0 auto;
+    padding: clamp(20px, 5vw, 50px) 20px 10px;
+    background: var(--mainBg-color) ;
     color: var(--textColor);
 }
 
@@ -70,13 +66,12 @@ html {
 }
 
 
-/* +++++++++++++++++++++NAV++++++++++++++++++++ */
+/* +++++++++++++++++++++NAVBAR++++++++++++++++++++ */
 
 .nav-bar {
     max-width: 700px;
-    height: 25px;
-    padding: 35px;
-    margin: 10px auto;
+    padding: 10px;
+    margin: 5px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -84,17 +79,15 @@ html {
 
 .underlined-link {
     text-decoration: none;
-    font-size: var(--fs-26);
-    font-family: var(--font-family-bold);
+    font-size: var(--fs-24);
     color: var(--accent-color);
-    font-weight: 600;
 }
 
 /* anim nav */
 a::after {
     content: "";
     display: block;
-    height: 2px;
+    height: 1px;
     background: var(--accent-color);
     transform: scale(0);
     transition: transform 0.3s ease-in-out;
@@ -104,50 +97,49 @@ a::after {
     transform: scale(1);
 }
 
+
+
 /* +++++++++++++++++++++BLOCK TEXT++++++++++++++++++++ */
 
-
-h1 {
-    font-size: var(--fs-26);
-    font-family: var(--font-family-bold);
+.global-container{
+    max-width: 800px;
+    margin: 50px auto;
+    font-size: clamp(16px, 2vw, 20px);
+    font-family: var(--font-family-soft);
     color: var(--textColor);
-    margin: 150px auto 40px;
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
 }
+
 
 .block {
-    margin: 10px auto 10px;
-}
-
-
-.text-1 {
-    font-size: var(--fs-24);
-    padding: 15px;
+    margin: 0 auto;
     line-height: 2;
-    margin: 0 auto 180px;
-}
-.text-2 {
-    font-size: var(--fs-24);
-    padding: 15px;
-    line-height: 2;
-    margin: 0 auto 30px;
 }
 
-.accent-words {
+.block > p {
+    padding: 10px 0px;
+    margin-bottom: var(--fs-24);
+}
+
+
+p span {
     color: var(--accent-color);
     text-decoration: underline;
     text-underline-offset: 6px;
 }
 
-.language {
+.css-language {
+    display: block;
     font-weight: 600;
     text-align: end;
+    font-size: var(--fs-14);
 }
+
+
+/* +++++++++++++++++++++PARALLAX++++++++++++++++++++ */
 
 .parallax {
     width: 100%;
-    height: 250px;
     position: relative;
     background-image: url(LIENS/fond\ parallax.png);
     background-position: center;
@@ -155,76 +147,86 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
 }
 
 .subtitle-work {
-    font-size: var(--fs-72);
-    color: var(--textColor);
+    font-size: var(--fs-56);
+    color: var(--mainBg-color);
+    padding: var(--fs-64);
+    font-family: var(--font-family-bold);
+    text-shadow: 2px 2px 2px #333;
 }
+
 
 /* +++++++++++++++++++++NAV WORKS++++++++++++++++++++ */
 
 .works-container {
-    max-width: fit-content;
-    text-align: center;
-    margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .listWork{
-    font-size: var(--fs-24);
     color: var(--accent-color);
-    text-decoration: underline;
     text-underline-offset: 6px;
-    display: block;
-    margin-bottom: 15px;
+    margin-bottom: var(--fs-14);
+    font-family: var(--font-family-bold);
 }
 
 /* +++++++++++++++++++++BLOCK CONTACT++++++++++++++++++++ */
 .contact-container {
-    width: 100%;
-    margin: 100px auto 500px;
     display: flex;
     justify-content: center;
-    gap: var(--fs-30);
+    align-items: center;
+    padding: var(--fs-20);
+    gap: var(--fs-26);
+    margin-top: 50px;
 }
 .icon {
-    width: var(--fs-26);
+    width: var(--fs-22);
 }
 
-@media (max-width: 768px){
+/* +++++++++++++++++++++ANIMATION SCROLL++++++++++++++++++++ */
 
+/* script à activer quand j' aurais fais mes cards */
+
+/* .reveal{
+    position: relative;
+    transform: translateY(150px
+    );
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px
+    );
+    opacity: 1;
+} */
+
+
+/* +++++++++++++++++++++QUERY++++++++++++++++++++ */
+
+@media screen and (orientation: portrait){
     .underlined-link {
-        font-size: var(--fs-24);
-    }
-    h1 {
+        text-decoration: none;
         font-size: var(--fs-20);
-        margin: 20px auto 40px;
+        color: var(--accent-color);
+        font-weight: 100;
     }
-    .text-1 {
-        font-size: var(--fs-20);
-        padding: 0 20px;
-        margin: 10px auto 50px;
+    .global-container{
+        margin: 0 auto;
+        padding: 15px;
     }
-    .language {
-        font-size: var(--fs-16);
-        margin-right: 10px;
+    .css-language {
+        font-size: var(--fs-12);
     }
-    .parallax {
-        height: 180px;
+    .parallax{
+        margin-bottom: 10px;
     }
     .subtitle-work {
-        font-size: var(--fs-50);
-    }  
-    .text-2 {
-        font-size: var(--fs-20);
-        padding: 0 20px;
-        margin: 10px auto 50px;
-    }
-    .listWork{
-        font-size: var(--fs-20);
-    }
-    .icon {
-        width: var(--fs-20);
+        font-size: var(--fs-36);
+        padding: var(--fs-30);
     }
 }
 
