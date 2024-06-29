@@ -5,11 +5,11 @@ function reveal() {
 
     for(let i = 0; i< reveals.length; i++){
 
-        let windowheight = window.innerHeight;
+        const windowheight = window.innerHeight;
 
-        let revealTop = reveals[i].getBoundingClientRect().top;
+        const revealTop = reveals[i].getBoundingClientRect().top;
 
-        let revealPoint = 150;
+        const revealPoint = 0;
 
         if(revealTop < windowheight - revealPoint){
             reveals[i].classList.add("active");

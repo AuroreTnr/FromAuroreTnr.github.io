@@ -5,31 +5,27 @@
 }
   
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background: linear-gradient(to right, #faaca8, #ddd6f3);
 }
 
-@font-face{
-    font-family: Savannah;
-    src: url(./Font/Savannah.ttf)
-}
 
 h1{
-    margin: 20px auto 0;
+    margin: 50px auto 0;
     padding: 20px;
     text-align: center;
-    font-family: Savannah, Arial, Helvetica, sans-serif;
-    font-size: 100px;
+    font-size: calc(3vmin + 5px);
 }
 h2{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    font-size: calc(2vmin + 2px);
 }  
 .slider {
     max-width: 600px;
     min-height: 400px;
-    margin: 50px auto 0;
+    margin: 15px auto 0;
     position: relative;
 }
 .slide-img {
@@ -45,13 +41,12 @@ h2{
 }
 .control-btn {
     position: absolute;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #111;
-    border-radius: 50%;
+    border: 1px solid #111;
     cursor: pointer;
 }
 .control-btn img {
@@ -61,32 +56,22 @@ h2{
 .previous-btn {
     top: 50%;
     left: 5px;
-    transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%);
 }
 .next-btn {
     top: 50%;
     right: 5px;
-    transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%);
 }
 
 @media(max-width: 682px){
-    h1{
-        margin: 25px auto 0;
-        padding: 20px;
-        font-size: 50px;
-    }
-    h2{
-        font-size: 15px;
-    }  
     .slider {
         max-width: 280px;
         min-height: 200px;
-        margin: 50px auto 0;
     }
     .control-btn {
-        width: 30px;
-        height: 30px;
-        border: 1px solid #111;
+        width: 20px;
+        height: 20px;
     }
     
 }

@@ -40,6 +40,12 @@
     
     --textColor:#4B4453;
 
+    /* Colors lien Work */
+    --bgColorYellow:rgba(227, 205, 139, 0.6);
+    --bgColorLightOrange:rgba(240, 190, 134, 0.6);
+    --bgColorGreen:rgba(93, 112, 82, 0.6);
+    --bgColorDarkOrange:rgba(193, 136, 69, 0.6);
+
     /* Fonts */
     --font-family-soft: "Nunito", sans-serif;
     --font-family-bold: "Roboto Condensed, sans-serif";
@@ -162,15 +168,67 @@ p span {
 /* +++++++++++++++++++++NAV WORKS++++++++++++++++++++ */
 
 .works-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 130px;
 }
 .listWork{
-    color: var(--accent-color);
-    text-underline-offset: 6px;
-    margin-bottom: var(--fs-14);
+    color: #333;
+    text-decoration: none;
     font-family: var(--font-family-bold);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+}
+/* +++++++++++++++++++++SELECTION COLOR LINK WORKS++++++++++++++++++++ */
+
+.listWork:nth-child(1){
+    background: var(--bgColorYellow);
+}
+.listWork:nth-child(2){
+    background: var(--bgColorLightOrange);
+}
+.listWork:nth-child(3){
+    background: var(--bgColorGreen);
+}
+.listWork:nth-child(4){
+    background: var(--bgColorDarkOrange);
+}
+.listWork:nth-child(5){
+    background: var(--bgColorYellow);
+}
+.listWork:nth-child(6){
+    background: var(--bgColorLightOrange);
+}
+.listWork:nth-child(7){
+    background: var(--bgColorGreen);
+}
+.listWork:nth-child(8){
+    background: var(--bgColorDarkOrange);
+}
+.listWork:nth-child(9){
+    background: var(--bgColorYellow);
+}
+.listWork:nth-child(10){
+    background: var(--bgColorLightOrange);
+}
+
+/* +++++++++++++++++++++EFFET BLUR AND SCALE LIEN WORK++++++++++++++++++++ */
+
+.works-container:has(.listWork:hover) .listWork:not(:hover){
+    filter: blur(5px);
+    transform: scale(0.95);
+}
+.listWork {
+    will-change: transform;
+}
+.listWork:hover {
+    transform: scale(1.05);
 }
 
 /* +++++++++++++++++++++BLOCK CONTACT++++++++++++++++++++ */
@@ -186,11 +244,10 @@ p span {
     width: var(--fs-22);
 }
 
-/* +++++++++++++++++++++ANIMATION SCROLL++++++++++++++++++++ */
+/* +++++++++++++++++++++ANIMATION SCROLL Work Link ++++++++++++++++++++ */
 
-/* script à activer quand j' aurais fais mes cards */
 
-/* .reveal{
+.reveal{
     position: relative;
     transform: translateY(150px
     );
@@ -202,7 +259,7 @@ p span {
     transform: translateY(0px
     );
     opacity: 1;
-} */
+}
 
 
 /* +++++++++++++++++++++QUERY++++++++++++++++++++ */
@@ -226,7 +283,7 @@ p span {
     }
     .subtitle-work {
         font-size: var(--fs-36);
-        padding: var(--fs-30);
+        padding: var(--fs-36);
     }
 }
 
