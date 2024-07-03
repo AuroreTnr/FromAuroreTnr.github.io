@@ -1,0 +1,116 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background: #333;
+    font-family: Raleway, sans-serif;
+}
+
+
+.checkbox-toggler{
+    display: none;
+}
+
+.nav-btn{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    border-radius: 50%;
+    z-index: 20;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon{
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background: #333;
+}
+.nav-icon::before, .nav-icon::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    transition: all 0.2s;
+}
+.nav-icon::before{
+    transform: translateY(-8px);
+}
+.nav-icon::after{
+    transform: translateY(8px);
+}
+
+
+.checkbox-toggler:checked + .nav-btn .nav-icon {
+    background-color: transparent;
+}
+.checkbox-toggler:checked + .nav-btn .nav-icon::before {
+    transform: translateY(0px) rotate(135deg);
+}
+.checkbox-toggler:checked + .nav-btn .nav-icon::after {
+    transform: translateY(0px) rotate(-135deg);
+}
+
+
+
+.nav-bg{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    background-image: radial-gradient(#32536e, #00223e);
+    z-index: 10;
+    transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+}
+
+.navigation{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 15;
+    transition: all 0.8s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.nav-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-link{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: calc(7vmin + 10px);
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.checkbox-toggler:checked ~ .navigation {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.checkbox-toggler:checked ~ .nav-bg {
+    transform: scale(80);
+}
