@@ -1,3 +1,19 @@
+// Animation ScrollBarTop
+window.addEventListener("scroll", barScrollTop)
+function barScrollTop(){
+    const hauteur = document.documentElement.scrollHeight - window.innerHeight
+
+    const position = window.scrollY
+
+    const largeur = document.documentElement.clientWidth
+
+    const barre = position / hauteur * largeur
+
+    document.querySelector('.progress').style.width = `${barre}px`;
+}
+
+
+// Animation reveal works
 window.addEventListener("scroll", reveal);
 
 function reveal() {
@@ -19,3 +35,4 @@ function reveal() {
         }
     }
 }
+

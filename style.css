@@ -72,6 +72,17 @@ html {
 }
 
 
+/* +++++++++++++++++++++ScrollBarrTop++++++++++++++++++++ */
+
+.progress{
+    background: rgba(93, 112, 82);
+    height: 3px;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
 /* +++++++++++++++++++++NAVBAR++++++++++++++++++++ */
 
 .nav-bar {
