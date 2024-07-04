@@ -14,25 +14,21 @@ function barScrollTop(){
 
 
 // Animation reveal works
+
+const slidingBlockWork = document.querySelector(".reveal")
+
 window.addEventListener("scroll", reveal);
 
 function reveal() {
-    const reveals = document.querySelectorAll(".reveal")
 
-    for(let i = 0; i< reveals.length; i++){
+    const {scrollTop, clientHeight} = document.documentElement;
 
-        const windowheight = window.innerHeight;
+    const windowheight = window.innerHeight;
 
-        const revealTop = reveals[i].getBoundingClientRect().top;
+    const topElementToTopViewport = slidingBlockWork.getBoundingClientRect().top;
 
-        const revealPoint = 0;
-
-        if(revealTop < windowheight - revealPoint){
-            reveals[i].classList.add("active");
-        }
-        else{
-            reveals[i].classList.remove("active");
-        }
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.9) {
+        slidingBlockWork.classList.add("active");
     }
 }
 
