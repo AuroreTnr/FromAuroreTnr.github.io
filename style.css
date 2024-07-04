@@ -76,7 +76,7 @@ html {
 
 .progress{
     background: rgba(93, 112, 82);
-    height: 3px;
+    height: 5px;
     width: 0;
     position: fixed;
     top: 0;
