@@ -2,7 +2,7 @@ const text = document.querySelector("h2")
 
 function countDownValue(){
     const now = new Date()
-    const countDownDate = new Date("august 24, 2024")
+    const countDownDate = new Date("August 24, 2024")
     const distance = countDownDate - now
     // console.log(distance);
 
