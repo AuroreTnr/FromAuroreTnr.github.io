@@ -41,10 +41,10 @@
     --textColor:#4B4453;
 
     /* Colors lien Work */
-    --bgColorYellow:rgba(227, 205, 139, 0.6);
-    --bgColorLightOrange:rgba(240, 190, 134, 0.6);
-    --bgColorGreen:rgba(93, 112, 82, 0.6);
-    --bgColorDarkOrange:rgba(193, 136, 69, 0.6);
+    --bgColorYellow:rgba(227, 205, 139);
+    --bgColorLightOrange:rgba(240, 190, 134);
+    --bgColorGreen:rgba(93, 112, 82);
+    --bgColorDarkOrange:rgba(193, 136, 69);
 
     /* Fonts */
     --font-family-soft: "Nunito", sans-serif;
@@ -286,5 +286,3 @@ p span {
         padding: var(--fs-36);
     }
 }
-
-
